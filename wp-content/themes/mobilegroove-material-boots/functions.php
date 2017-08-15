@@ -179,3 +179,5 @@ function getCatPostsList($cat,$max){
 		return false;
 	}
 }
+
+define( "imagepath",get_template_directory_uri() . "/img" );

@@ -23,10 +23,10 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<nav class="navbar navbar-inverse" role="navigation">
+		<nav class="navbar navbar-groove" role="navigation">
 		  <div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
+		    <div class="navbar-header clear">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
@@ -34,9 +34,11 @@
 		        <span class="icon-bar"></span>
 		      </button>
 
-			<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+				<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo(imagepath);?>/logo.png" class="alignleft"> <span class="navbar-subbrand alignleft">By Peggy Anne Salz</span></a>
+				
+    			<a href="javascript:void(0)" class="btn btn-raised btn-primary nav-cta">Hire Me</a>
+    		
     		</div>
-
     			<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
 				 <?php
 		            wp_nav_menu( array(
@@ -50,6 +52,8 @@
 	        	?>
 
         		</div> <!-- .navbar-collapse -->
+
+        		
         	</div><!-- /.container -->
 		</nav><!-- .navbar .navbar-default -->
 	</header><!-- #masthead -->

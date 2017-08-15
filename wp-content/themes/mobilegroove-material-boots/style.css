@@ -22,6 +22,16 @@ and Blueprint http://www.blueprintcss.org/
 */
 
 /*--------------------------------------------------------------
+>>> COLORS:
+----------------------------------------------------------------
+
+Top gray 	#F5F5F5
+Orange 		#EA8F30
+Dark gray	#4D4C4D
+Light gray	#95989A
+
+
+/*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 1.0 Reset
@@ -48,6 +58,11 @@ and Blueprint http://www.blueprintcss.org/
 /*--------------------------------------------------------------
 1.0 Reset
 --------------------------------------------------------------*/
+
+body{ 
+	background-color: #fff;
+}
+
 
 /* Side Nav */
 #sideNav, #sideNav li ul {
@@ -250,8 +265,144 @@ a.openItem .icon-topic-social-media {
 
 .tweetTitle {
 }
+.carousel {
+	margin-bottom: 55px;
+}
+.carousel .alignleft {
+	margin-right: 0;
+}
+.carousel-caption {
+	top: auto;
+	bottom: auto;
+	left: auto;
+	right: auto;
+	text-align: left;
+	color: #000;
+	text-shadow: none;
+	padding-top: 0;
+	padding-bottom: 0;
+	position: relative;
+    margin-left: 200px;
+}
+.carousel-indicators {
+	bottom: -50px;
+}
+.carousel-header {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.carousel-content {
+
+}
+.carousel .item img {
+	position: absolute;
+	top: 30px;
+	bottom: 0;
+}
+.carousel-indicators {
+	height: 26px;
+}
+.carousel-indicators li {
+	width: 21px;
+	height: 21px;
+	background-color: #EA8F30;
+	border-radius: 26px;
+	vertical-align: middle;
+}
+
+.carousel-indicators .active {
+	width: 26px;
+	height: 26px;
+	background-color: #4D4C4D;
+}
+
+.navbar.navbar-groove {
+	background-color: #F5F5F5;
+	color: #EA8F30;
+}
+.navbar-header {
+	float: none;
+	position: relative;
+}
+.navbar-brand img {
+	margin-right: 0.5em;
+}
+.navbar-subbrand {
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #95989A;
+	line-height: 45px; /* might have to adjust this for logo resizing */
+}
+.navbar .menu-item {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.navbar .current-menu-item {
+	color: #fff;
+	background-color: #4D4C4D;
+}
+.navbar .navbar-nav>li>a {
+	padding: 10px 15px;
+}
+.nav-cta {
+	float: right;
+	margin-top: 10px;
+}
+.navbar-collapse {
+	padding-left: 0;
+}
+
+.container {
+	position: relative;
+}
+.btn-primary:not(.btn-link):not(.btn-flat),
+.btn-primary:active:not(.btn-link):not(.btn-flat),
+.btn-primary:hover:not(.btn-link):not(.btn-flat) {
+	background-color: #EA8F30 !important;
+}
 
 
+.full-row {
+	width: 100%;
+	margin-right: 0;
+	margin-left: 0;
+	background-color: #E5E5E5;
+}
+.as-seen-on {
+	text-align: center;
+	padding-bottom: 1.5em;
+}
+.as-seen-on img {
+	margin: 0 6px;
+}
+
+.card-deck {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.card-deck .card {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.card {
+	position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+}
 
 /*--------------------------------------------------------------
 2.0 Typography
